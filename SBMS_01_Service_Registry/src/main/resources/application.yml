@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: SBMS_01_Service_Registry
+server:
+  port: 8761   # if port number is configured to 8761, the clients (REST Apis)will automatically register with the
+                # Eureka Server and we dont need to manually register them with the EUREKA server.
+  
+eureka:
+  client:
+    register-with-eureka: false  #disabling the self registration of this project with Eureka Server
